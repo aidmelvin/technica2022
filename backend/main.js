@@ -19,7 +19,8 @@ async function setData(data) {
 app.use(express.json());
 
 app.get("/data", async (req, res) => {
-  res.send(await getData());
+  //res.send(await getData());
+  res.send("you have successfully accessed ADC Technica Workshop Backend");
 })
 
 // TODO: Implement setting data here.
