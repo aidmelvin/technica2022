@@ -4,7 +4,7 @@ import { BACKEND_IP } from './ip.js';
 
 const app = express();
 
-const LISTEN_PORT = 3000;
+const LISTEN_PORT = process.env.PORT || 3000;
 const DATA_FILE = "./data.json";
 
 async function getData() {
